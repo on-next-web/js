@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third solution</title>
+</head>
+<body>
+    <h1>question-6 </h1>
+    <p> Answer 6 :-</p>
+    <script>
+        //question--1
+        // Write a function that returns a greeting to users ---->greeting("Akhter") ➞ "Hello, Akhter!"
+
+        function greeting(a){
+            return alert(`"Hello, ${a} !"`);
+        }
+        greeting("Guru ji");
+
+        //question--2
+        //Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.------>makesTen(6, 10) ➞ true
+                //makesTen(8, 7) ➞ false
+
+                function makesTen(a,b){
+                    if(a+b==10 || a==10 || b==10){
+                        return true;
+
+                    }else{
+                        return false;
+                    }
+                }
+                console.log(makesTen(6,10));
+                console.log(makesTen(2,7));
+
+                // question--3
+                // Create a function that returns true if a string is empty and false otherwise.--->isEmpty("") ➞ true
+                            // isEmpty("a") ➞ false
+            
+            function isEmpty(x){
+                if(""===x){
+                    return true;
+                }else{
+                    return false;
+                }            
+            }
+            console.log(isEmpty(""));
+            console.log(isEmpty("a"));
+            
+            //question--4
+            //Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.----->divisibleByFive(5) ➞true divisibleByFive(33) ➞ false
+
+            function divisibleByFive(y){
+                if (y%5==0) {
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            console.log(divisibleByFive(5));
+            console.log(divisibleByFive(33));
+            console.log(divisibleByFive(75));
+
+            //question--5
+            //Write a function that returns the length of a string. Make your function recursive.
+            //length("Max") ➞ 3
+           //length("Sajida") ➞ 6
+           //length("") ➞ 0
+
+           function length(a){
+            return a.length;
+           }
+           console.log(length("Max"));
+           console.log(length("sajida"));
+           console.log(length(""));
+
+           //question--6
+           //Create a function that calculates the area of a rectangle. If the arguments are invalid, your function must return -1.
+           //area(3, 2) ➞ 6
+           //area(-1, 2) ➞ -1
+           //area(0, 1) ➞ -1
+
+           function area(l,b){
+                if (l===0 || b===0 || l===-1 || b===-1 ){
+                    return(-1);
+                }else{
+                    return(l*b);
+                }
+           }
+           
+           console.log(area(3, 2));
+           console.log(area(-1,2));
+        //    document.querySelector("P").innerHTML=area(0,1);
+           console.log(area(0,1));
+
+        //question--7
+        //Write a function to reverse an array.
+        //reverse([1, 2, 3, 4]) ➞ [4, 3, 2, 1]
+        //reverse([9,2, 3, 4]) ➞ [4, 3, 2, 9,]
+
+        function reverse(m){
+            return m.reverse()
+        }   
+        console.log(reverse([1,2,3,4]));
+        console.log(reverse([9,2, 3, 4]));
+
+        //question--8
+        //Help fix all the bugs in the function increment Items! It is intended to add 1 to every element in the array!
+        //incrementItems([0, 1, 2, 3]) ➞ [1, 2, 3, 4]
+        //incrementItems([2, 4, 6, 8]) ➞ [3, 5, 7, 9]
+
+        function incrementItems(r){
+            let arr=[];
+            for(let i=0; i<r.length; i++){
+                arr.push(r[i]+1)
+            }
+            return arr;
+        }
+        console.log(incrementItems([0, 1, 2, 3]));
+        console.log(incrementItems([2, 4, 6, 8]));
+
+        //question--9
+        //Write a template string according to the following example:
+        //const a = "Akhter";
+        //const b = "Sajida";
+        //const c = "Max";
+        //const template ➞ "Their names were: Akhter,Sajida and Max
+
+        const s="Akhter";
+        const t="Sajida";
+        const v="Max";
+
+        const template=`${s}, ${t} and ${v}`;
+        console.log(template);
+
+        // question---10
+        //A bartender is writing a simple program to determine whether he should serve drinks to someone. He only serves drinks to people 18 and older and when he's not on break.Given the person's age, and whether break time is in session, create a function which returns whether he should serve drinks.
+        //shouldServeDrinks(15, true) ➞ false
+        //shouldServeDrinks(20, false) ➞ true
+        //shouldServeDrinks(25, true) ➞ false
+
+        // function shouldServeDrinks(o,p){
+        //    if(o>=18){
+        //         return true;
+        // }else{ 
+        //     return false;
+        // }
+        
+        //  }
+        // console.log(shouldServeDrinks(15, true) );
+        // console.log(shouldServeDrinks(20, false));
+        // console.log(shouldServeDrinks(25,true)); 
+        
+    </script>
+
+</body>
+</html>
