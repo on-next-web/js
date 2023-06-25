@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --background:#3C84AB;
+    --secondary-color:#EA738D;
+    --primary-color:#89ABE3;
+    --color: #fff;
+
+}
+.f-size{
+    font-size: 3rem;
+}
+.f-size:hover{
+    color:var(--secondary-color);
+    cursor:auto;
+}
+
